@@ -16,5 +16,36 @@
   <button id="theme">Сменить тему</button>
   <script src="script.js"></script>
 </body>
+  <style>
+    .dark{
+  background-color: #5f626d;
+  color: #fff;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.5s, color 0.5s;
+  
+}/*плавность: что плавно двигается и время*/
+#theme{
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+#theme:hover{
+  background-color: grey;
+  
+}
+  </style>
+<script>
+  let button1 = document.getElementById("theme");
+let body = document.body;
+  button1.addEventListener("click",() => {
+  body.classList.toggle("light");
+  body.classList.toggle("dark");
+});
 
+</script>
 </html>
