@@ -1,0 +1,21 @@
+.dark{
+  background-color: #5f626d;
+  color: #fff;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.5s, color 0.5s;
+  
+}/*плавность: что плавно двигается и время*/
+#theme{
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+#theme:hover{
+  background-color: grey;
+  
+}
